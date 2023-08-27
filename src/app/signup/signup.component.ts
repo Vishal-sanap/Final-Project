@@ -109,9 +109,9 @@ export class SignupComponent {
     let endpoint = 'Users';
     // this.commanservice.userDataByUsername;
     console.log('form data', this.SignupForm.value);
-    this.router.navigateByUrl('login');
+    this.router.navigateByUrl('home');
     this.commanservice.sucessToaster(
-      'You Have Signup Sucessfully !',
+      'Signup Sucessfully , Please Click On Already have an Account',
       'success',
       {
         timeOut: 5000,
@@ -131,7 +131,10 @@ export class SignupComponent {
       Email: this.SignupForm.value.Email,
       UserCompnany: this.SignupForm.value.UserCompany,
       Password: this.SignupForm.value.Password,
+      
     };
+    
+
 
     if (this.dataId) {
       this.commanapicallservice
