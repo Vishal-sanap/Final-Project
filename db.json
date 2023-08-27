@@ -1,0 +1,31 @@
+{
+  "Users": [
+    {
+      "Username": "tushar123",
+      "Address": "delhi",
+      "MobNumber": 8976545678,
+      "Email": "tushar123@gmail.com",
+      "UserCompnany": "F-31",
+      "Password": "Tushar@123",
+      "id": 1
+    },
+    {
+      "Username": "rohit123",
+      "Address": "delhi",
+      "MobNumber": 8976545678,
+      "Email": "rohit123@gmail.com",
+      "UserCompnany": "F-31",
+      "Password": "Rohit@123",
+      "id": 2
+    },
+    {
+      "Username": "vishal123",
+      "Address": "mumbai",
+      "MobNumber": 9876567890,
+      "Email": "vishal123@gmail.com",
+      "UserCompnany": "Shanti",
+      "Password": "Vishal@123",
+      "id": 3
+    }
+  ]
+}

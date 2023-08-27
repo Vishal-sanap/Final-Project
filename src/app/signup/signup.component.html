@@ -1,0 +1,67 @@
+
+  <div class="back-container"></div>
+  <div class="background">
+   <div class="shape"></div>
+   <div class="shape"></div>
+
+
+
+
+<div class="container">
+    <h1 style="text-align: center; position: relative; top: 15px;"><b>Signup Here</b></h1>
+  
+      <div class="form-container">
+  
+      <form [formGroup]="SignupForm" class="example-form">
+  
+          <mat-form-field class="example-full-width1">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Ex. alex123" formControlName="Username">
+            <mat-error>Enter valid Username</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width2">
+              <mat-label>Address</mat-label>
+              <input matInput placeholder="Ex. Mexico" formControlName="Address" >
+              <mat-error>This field is required !</mat-error>
+            </mat-form-field>
+  
+          <mat-form-field class="example-full-width3">
+              <mat-label>Mobile number</mat-label>
+              <input type="number" matInput placeholder="Ex. 9876XXX675" formControlName="MobNumber" >
+              <mat-error>Enter your 10 digit mobile number !</mat-error>
+            </mat-form-field>
+  
+            <mat-form-field class="example-full-width4">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Ex. alex123@gmai.com" formControlName="Email" >
+              <mat-error>Enter valid Email Id !</mat-error>
+            </mat-form-field>
+  
+            <mat-form-field class="example-full-width5">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput placeholder="Ex. Alex@123" formControlName="Password" >
+              <mat-error>Use 8 or more charecters including atleast 1 uppercase alphabet and a combination of numbers & symbols !</mat-error>
+            </mat-form-field>
+  
+            <mat-form-field class="example-full-width6">
+                  <mat-label>Compnies</mat-label>
+                  <mat-select placeholder="Select your company" formControlName="UserCompany" >
+                    <mat-option *ngFor="let compny of compnies"  [value]="compny">{{compny}}</mat-option>
+                  </mat-select>
+                  <mat-error>Please select your company !</mat-error>
+                </mat-form-field>
+          
+                
+                <button class="sign-btn" (click)="SubmitDetails()" [disabled]="SignupForm.invalid" mat-button color="warn">Signup</button>
+                <a href="login" class="anchor">Already have an account</a>
+      </form>
+    </div>
+  
+  </div>        
+  
+  
+
+
+
+
