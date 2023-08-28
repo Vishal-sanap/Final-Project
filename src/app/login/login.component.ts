@@ -42,7 +42,7 @@ export class LoginComponent {
             this.commanService.companyName=this.userData.UserCompnany;
             this.commanService.id=this.userData.id;
             
-            this.commanService.sucessToaster('You Have Signup Sucessfully !','success',
+            this.commanService.sucessToaster('You Have Login Sucessfully !','success',
             {
              timeOut: 3000,
              positionClass: 'toast-top-center'
