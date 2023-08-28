@@ -111,7 +111,7 @@ export class SignupComponent {
     console.log('form data', this.SignupForm.value);
     this.router.navigateByUrl('/home');
     this.commanservice.sucessToaster(
-      'Signup Sucessfully , Please Click On Already have an Account',
+      'Congratulations , You Have Signup Sucessfully',
       'success',
       {
         timeOut: 5000,
