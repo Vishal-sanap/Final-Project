@@ -35,6 +35,15 @@
       "UserCompnany": "Shanti",
       "Password": "Manav@123",
       "id": 4
+    },
+    {
+      "Username": "nilesh123",
+      "Address": "pune",
+      "MobNumber": 8798564747,
+      "Email": "nilesh123@gmail.com",
+      "UserCompnany": "Trishala",
+      "Password": "Nilesh@123",
+      "id": 5
     }
   ]
 }
