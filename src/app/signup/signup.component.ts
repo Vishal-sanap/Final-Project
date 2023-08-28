@@ -109,7 +109,7 @@ export class SignupComponent {
     let endpoint = 'Users';
     // this.commanservice.userDataByUsername;
     console.log('form data', this.SignupForm.value);
-    this.router.navigateByUrl('home');
+    this.router.navigateByUrl('/home');
     this.commanservice.sucessToaster(
       'Signup Sucessfully , Please Click On Already have an Account',
       'success',

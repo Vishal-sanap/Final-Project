@@ -11,6 +11,7 @@ const routes: Routes = [
   {path : 'dashboard' , component : DashboardComponent},
   {path : '' , component : HomeComponent},
   {path : 'signup' , component : SignupComponent},
+  {path : 'home/dashboard' , component : LoginComponent},
   {path : 'login' , component : LoginComponent},
   {path : 'home/user' , component : UserComponent},
   {path : 'home/home/dashboard' , component : DashboardComponent},
