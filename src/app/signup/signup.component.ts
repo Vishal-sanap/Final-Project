@@ -105,9 +105,7 @@ export class SignupComponent {
   }
 
   SubmitDetails() {
-    // this.formdata=this.SignupForm.value;
     let endpoint = 'Users';
-    // this.commanservice.userDataByUsername;
     console.log('form data', this.SignupForm.value);
     this.router.navigateByUrl('/home');
     this.commanservice.sucessToaster(
