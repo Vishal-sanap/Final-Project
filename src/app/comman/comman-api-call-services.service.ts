@@ -1,38 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CommanApiCallServicesService {
-  url = 'http://localhost:3000/';
-  // userUrl='http://localhost:3000/Users';
+  url1 = 'http://localhost:3000/Users';
+  url2 = 'http://localhost:3000/arabiclang';
+ 
 
-  constructor(private httpclient: HttpClient) {}
-
-  postApiCall(endPoint: string, Request: any) {
-    let url = this.url + endPoint;
-    return this.httpclient.post(url, Request);
+  constructor(private httpclient: HttpClient, private toastrService:ToastrService) {}
+  apiCall1(){
+    return this.httpclient.get(this.url1);
   }
-
-  getApiCall(endPoint: string, id?: number) {
-    let url = this.url + endPoint;
-    return this.httpclient.get(url);
+  apiCall2(){
+    return this.httpclient.get(this.url2);
   }
-
-  patchApiCall(endPoint: any, data: any, id: number): any {
-    let url = this.url + endPoint + '/' + id;
-    return this.httpclient.patch(url, data);
-  }
-
-  deleteApiCall(endPoint: string, id: number) {
-    let url = this.url + endPoint + '/' + id;
-    console.log(url);
-    return this.httpclient.delete(url);
-  }
-
-  getApiCallById(endPoint: string, id: number) {
-    let url = this.url + endPoint + '/' + id;
-    return this.httpclient.get(url);
-  }
+  successToaster( msg:any, title:any, configuration:any ){
+    this.toastrService.success( msg, title, configuration)
+}
 }

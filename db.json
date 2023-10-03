@@ -1,49 +1,147 @@
 {
   "Users": [
     {
-      "Username": "tushar123",
-      "Address": "delhi",
-      "MobNumber": 8976545678,
-      "Email": "tushar123@gmail.com",
-      "UserCompnany": "F-31",
-      "Password": "Tushar@123",
+      "Establishmentid": "45431324",
+      "Crnumber": "123288",
+      "Customscode": "L1344",
+      "Agencyname": "new ncm2",
+      "Status": "Pending Approval",
+      "Creationdate": "27/08/2023",
+      "Clearingagencytype": "Goverment",
       "id": 1
     },
     {
-      "Username": "rohit123",
-      "Address": "delhi",
-      "MobNumber": 8976545678,
-      "Email": "rohit123@gmail.com",
-      "UserCompnany": "F-31",
-      "Password": "Rohit@123",
+      "Establishmentid": "87431324",
+      "Crnumber": "123224",
+      "Customscode": "L4544",
+      "Agencyname": "Angular fzc3",
+      "Status": "Approved",
+      "Creationdate": "29/08/2023",
+      "Clearingagencytype": "Private",
       "id": 2
     },
     {
-      "Username": "vishal123",
-      "Address": "mumbai",
-      "MobNumber": 9876567890,
-      "Email": "vishal123@gmail.com",
-      "UserCompnany": "Shanti",
-      "Password": "Vishal@123",
+      "Establishmentid": "54431324",
+      "Crnumber": "123287",
+      "Customscode": "L7644",
+      "Agencyname": "Non gov",
+      "Status": "Rejected",
+      "Creationdate": "03/09/2023",
+      "Clearingagencytype": "Private",
       "id": 3
     },
     {
-      "Username": "manav123",
-      "Address": "pune",
-      "MobNumber": 8787656789,
-      "Email": "manav123@gmail.com",
-      "UserCompnany": "Shanti",
-      "Password": "Manav@123",
+      "Establishmentid": "12431324",
+      "Crnumber": "123265",
+      "Customscode": "L8944",
+      "Agencyname": "new lcm agency",
+      "Status": "Approved",
+      "Creationdate": "06/09/2023",
+      "Clearingagencytype": "Goverment",
       "id": 4
     },
     {
-      "Username": "nilesh123",
-      "Address": "pune",
-      "MobNumber": 8798564747,
-      "Email": "nilesh123@gmail.com",
-      "UserCompnany": "Trishala",
-      "Password": "Nilesh@123",
+      "Establishmentid": "43431324",
+      "Crnumber": "123254",
+      "Customscode": "L7644",
+      "Agencyname": "new indian4",
+      "Status": "Pending Approval",
+      "Creationdate": "09/09/2023",
+      "Clearingagencytype": "Private",
       "id": 5
+    },
+    {
+      "Establishmentid": "43451324",
+      "Crnumber": "126654",
+      "Customscode": "L7674",
+      "Agencyname": "new west4 agency",
+      "Status": "Approved",
+      "Creationdate": "12/09/2023",
+      "Clearingagencytype": "Private",
+      "id": 6
+    },
+    {
+      "Establishmentid": "87451324",
+      "Crnumber": "134654",
+      "Customscode": "L7689",
+      "Agencyname": "African4 agency",
+      "Status": "Approved",
+      "Creationdate": "18/09/2023",
+      "Clearingagencytype": "Goverment",
+      "id": 7
     }
-  ]
-}
+  ],
+    "arabiclang": [
+      {
+        "Establishmentid": "45431324",
+        "Crnumber": "123288",
+        "Customscode": "L1344",
+        "Agencyname": "وكالة جديدة2",
+        "Status": "قيد الانتظار للموافقة",
+        "Creationdate": "27/08/2023",
+        "Clearingagencytype": "حكومي",
+        "id": 1
+      },
+      {
+        "Establishmentid": "87431324",
+        "Crnumber": "123224",
+        "Customscode": "L4544",
+        "Agencyname": "جديدة2",
+        "Status": "تمت الموافقة",
+        "Creationdate": "29/08/2023",
+        "Clearingagencytype": "خاص",
+        "id": 2
+      },
+      {
+        "Establishmentid": "54431324",
+        "Crnumber": "123287",
+        "Customscode": "L7644",
+        "Agencyname": "غير حكومي",
+        "Status": "مرفوض",
+        "Creationdate": "03/09/2023",
+        "Clearingagencytype": "خاص",
+        "id": 3
+      },
+      {
+        "Establishmentid": "12431324",
+        "Crnumber": "123265",
+        "Customscode": "L8944",
+        "Agencyname": "وكالة جديدة",
+        "Status": "تمت الموافقة",
+        "Creationdate": "06/09/2023",
+        "Clearingagencytype": "حكومي",
+        "id": 4
+      },
+      {
+        "Establishmentid": "43431324",
+        "Crnumber": "123254",
+        "Customscode": "L7644",
+        "Agencyname": "وكالة هندية جديدة4",
+        "Status": "قيد الانتظار للموافقة",
+        "Creationdate": "09/09/2023",
+        "Clearingagencytype": "خاص",
+        "id": 5
+      },
+      {
+        "Establishmentid": "43451324",
+        "Crnumber": "126654",
+        "Customscode": "L7674",
+        "Agencyname": "وكالة جديدة غربية4",
+        "Status": "تمت الموافقة",
+        "Creationdate": "12/09/2023",
+        "Clearingagencytype": "خاص",
+        "id": 6
+      },
+      {
+        "Establishmentid": "87451324",
+        "Crnumber": "134654",
+        "Customscode": "L7689",
+        "Agencyname": "وكالة إفريقية4",
+        "Status": "تمت الموافقة",
+        "Creationdate": "18/09/2023",
+        "Clearingagencytype": "حكومي",
+        "id": 7
+      }
+    ]
+  }
+  

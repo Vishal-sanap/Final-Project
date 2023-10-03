@@ -4,7 +4,7 @@
     height: 40px;
     width: 100px;
     top: 10px;
-    left: 1150px;
+    left: -1130px;
 }
 .btn1{
     background-color: rgb(255, 135, 227);
@@ -35,6 +35,10 @@ table,tr,th,td{
     top: 60px;
   }
   
+  .toolbar-row{
+    position: absolute;
+    left: 1140px;
+  }
   
   
   

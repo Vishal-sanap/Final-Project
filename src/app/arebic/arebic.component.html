@@ -1,0 +1,51 @@
+
+<mat-toolbar class="sidenav" color="primary">
+    <mat-toolbar-row class="toolbar-row" >
+    <h1>مرحباً</h1>
+    <button (click)="toggleSidenav()"  mat-icon-button >
+        <mat-icon>menu</mat-icon>
+    </button>
+        <button class="btn" (click)="home()" value="english" mat-button color="warn">English</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav position="end" class="sidenav" #sidenav mode="side" [opened]="isSidenavOpen">
+        <mat-nav-list>
+            <a mat-list-item>.</a>
+            <a mat-list-item>مسؤل</a>
+            <a mat-list-item>مالك</a>
+            <a mat-list-item>وكالة</a>
+            <a mat-list-item>عميل</a>
+        </mat-nav-list>
+    </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>نوع وكالة المقاصة</th>
+                        <th>تاريخ الإنشاء</th>
+                        <th>حالة</th>
+                        <th>اسم الوكالة</th>
+                        <th>رمز جمركي</th>
+                        <th>رقم السجل التجاري</th>
+                        <th>معرف المنشأة</th>
+                    </tr>
+                    <tr *ngFor="let item of user">
+                       <td>{{item.Clearingagencytype}}</td>
+                       <td>{{item.Creationdate}}</td>
+                       <td>{{item.Status}}</td>
+                       <td>{{item.Agencyname}}</td>
+                       <td>{{item.Customscode}}</td>
+                       <td>{{item.Crnumber}}</td>
+                       <td>{{item.Establishmentid}}</td>
+                    </tr>
+                </table>
+                </div>
+            <div style="height: 88vh;"></div>
+        </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+

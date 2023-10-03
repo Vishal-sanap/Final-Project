@@ -1,25 +1,51 @@
 
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
+<mat-toolbar class="sidenav" color="primary">
+    <mat-toolbar-row  >
         <button (click)="toggleSidenav()"  mat-icon-button >
             <mat-icon>menu</mat-icon>
         </button>
-    <h1>Welcome    --- {{userName}}</h1>
+    <h1>Welcome</h1>
+        <button class="btn" (click)="arebic()" value="english" mat-button color="warn">عربي</button>
     </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="side" mode="side" [opened]="isSidenavOpen">
+    <mat-sidenav class="sidenav" #sidenav mode="side" mode="side" [opened]="isSidenavOpen">
         <mat-nav-list>
-            <a mat-list-item routerLink="user" >User</a>
-            <a mat-list-item routerLink="/home/home/dashboard" >Dashboard</a>
+            <a mat-list-item>.</a>
+            <a mat-list-item>Admin</a>
+            <a mat-list-item>Owner</a>
+            <a mat-list-item>Agency</a>
+            <a mat-list-item>Customer</a>
         </mat-nav-list>
     </mat-sidenav>
         <mat-sidenav-content>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>Establishment Id</th>
+                        <th>Cr Number</th>
+                        <th>Customs Code</th>
+                        <th>Agency Name</th>
+                        <th>Status</th>
+                        <th>Creation Date</th>
+                        <th>Clearing agency type</th>
+                    </tr>
+                    <tr *ngFor="let item of userData">
+                       <td>{{item.Establishmentid}}</td>
+                       <td>{{item.Crnumber}}</td>
+                       <td>{{item.Customscode}}</td>
+                       <td>{{item.Agencyname}}</td>
+                       <td>{{item.Status}}</td>
+                       <td>{{item.Creationdate}}</td>
+                       <td>{{item.Clearingagencytype}}</td>
+                    </tr>
+                </table>
+                </div>
             <div style="height: 88vh;"></div>
         </mat-sidenav-content>
 </mat-sidenav-container>
 
-    <button class="btn" (click)="signup()" *ngIf="!hideButton" mat-button color="warn">Signup</button>
-    <button class="btn1" (click)="login()" mat-button color="warn">Login</button>
+
+
 
 
